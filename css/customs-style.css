@@ -1,0 +1,99 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+* {
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1f2937;
+}
+
+.cards-container {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  width: max-content;
+  background-color: #d9d9d9;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card-title {
+  margin: 1rem auto;
+}
+
+.product-image {
+  max-width: 320px;
+  max-height: 300px;
+}
+
+.card-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price {
+  color: #0e6f34;
+}
+
+.shopping-cart-image {
+  max-width: 30px;
+  max-height: 30px;
+  border-radius: 50%;
+}
+
+.shopping-cart-image:hover {
+  border: 1px solid #0e6f34;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 5px;
+}
+
+.pag-btn {
+  width: 35px;
+  height: 35px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: #0e6f34;
+  color: white;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.pag-btn:hover {
+  background-color: white;
+  color: #0e6f34;
+}

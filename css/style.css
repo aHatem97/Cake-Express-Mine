@@ -1,0 +1,27 @@
+header {
+  background-color: #e5e7eb;
+  color: #1f2937;
+  text-size-adjust: 36px;
+}
+
+.hero-section {
+  background-color: #1f2937;
+  color: #f9faf8;
+  text-size-adjust: 48px;
+}
+
+.quote-section {
+  background-color: #e5e7eb;
+  color: #1f2937;
+  text-size-adjust: 36px;
+}
+
+body {
+  background-color: #1f2937;
+}
+
+footer {
+  background-color: #1f2937;
+  color: #f9faf8;
+  text-size-adjust: 48px;
+}
