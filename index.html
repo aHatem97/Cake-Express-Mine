@@ -5,14 +5,197 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cake Express</title>
+
+    <!-- Index  CSS file link -->
+    <link href="/css/index-style.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <navbar></navbar>
+      <navbar class="header-nav">
+        <a href="/index.html"
+          ><img src="/images/logo.png" alt="Cake Express Logo" class="logo"
+        /></a>
+        <ul class="nav-list">
+          <li class="nav-list-item"><a href="/index.html">Home</a></li>
+          <li class="nav-list-item">
+            <a href="/pages/customs.html">Custom Cakes</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="/pages/cart.html"
+              ><img
+                src="/images/shopping-cart-logo.png"
+                alt="Shopping cart logo"
+                class="cart-logo"
+            /></a>
+          </li>
+        </ul>
+      </navbar>
     </header>
-    <div class="hero-section"></div>
-    <div><a href="/pages/customs.html">Customs</a></div>
-    <div class="quote-section"></div>
-    <footer></footer>
+    <main>
+      <section class="hero-section">
+        <div class="title-area">
+          <h1 class="hero-title">The Best things in life are Sweet!</h1>
+          <p class="hero-subtitle">
+            Sweethouse Bakery has been making France’s favorite baked goods the
+            old-fashioned way: from scratch. in small batches, and using the
+            finest ingredients.
+          </p>
+          <button type="button" class="hero-btn">Shop Now!</button>
+        </div>
+        <div class="image-area">
+          <img
+            src="/images/index-hero-image.png"
+            alt="index hero"
+            class="hero-image"
+          />
+        </div>
+      </section>
+      <section class="boxes-section">
+        <h3 class="boxes-title">This is a cake website</h3>
+        <div class="cards-container">
+          <div class="card">
+            <img
+              src="/images/yellow-fruit-cake.png"
+              alt="Yellow Fruit Cake"
+              class="product-image"
+            />
+            <p class="product-info">This is a Yellow Fruit Cake</p>
+          </div>
+
+          <div class="card">
+            <img
+              src="/images/blue-fruit-cake.png"
+              alt="Blue Fruit Cake"
+              class="product-image"
+            />
+            <p class="product-info">This is a Blue Fruit Cake</p>
+          </div>
+
+          <div class="card">
+            <img
+              src="/images/caramel-cake.png"
+              alt="Caramel Cake"
+              class="product-image"
+            />
+            <p class="product-info">This is a Caramel Cake</p>
+          </div>
+
+          <div class="card">
+            <img
+              src="/images/chocolate-fruit-cake.png"
+              alt="Chocolate Fruit Cake"
+              class="product-image"
+            />
+            <p class="product-info">This is a Chocolate Fruit Cake</p>
+          </div>
+        </div>
+      </section>
+      <section class="quote-section">
+        <p class="quote">
+          Sometimes we make the process more complicated than we need to. We
+          will never make a journey of a thousand miles by fretting about how
+          long it will take or how hard it will be. We make the journey by
+          taking each day step by step and then repeating it again and again
+          until we reach our destination
+        </p>
+        <p class="author">-Joseph B. Wirthlin</p>
+      </section>
+      <section class="action">
+        <div class="action-info">
+          <h3 class="action-title">Call to action! It's time!</h3>
+          <p class="action-text">
+            Sign up for our product by clicking that button right over there!
+          </p>
+        </div>
+        <div class="action-signup">
+          <button type="button" class="action-btn">Sign up</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="footer-contact">
+        <div class="contact-info">
+          <a href="/index.html"
+            ><img src="/images/logo.png" alt="Cake Express Logo" class="logo"
+          /></a>
+          <h3 class="footer-title">Contact</h3>
+          <ul class="footer-list">
+            <li class="footer-list-item">
+              Address: <a class="grey">Marknadsvägen 9, 254 69 Ödåkra-väla</a>
+            </li>
+            <li class="footer-list-item">
+              Phone: <a class="grey">(+46) 42248280</a>
+            </li>
+            <li class="footer-list-item">
+              Hours: <a class="grey">10am – 8pm. Mon - Friday</a>
+            </li>
+          </ul>
+          <p>Follow Us</p>
+          <ul class="footer-socials">
+            <li class="footer-icons">
+              <img src="/images/facebook-logo.png" />
+            </li>
+            <li class="footer-icons">
+              <img src="/images/pinterest-logo.png" />
+            </li>
+            <li class="footer-icons">
+              <img src="/images/twitter-logo.png" />
+            </li>
+            <li class="footer-icons">
+              <img src="/images/instagram-logo.png" />
+            </li>
+          </ul>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2225.7912562393003!2d12.7569798!3d56.0915287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46522d78346cb139%3A0x58ca25d786133944!2zTWFya25hZHN2w6RnZW4gOSwgMjYwIDM2IMOWZMOla3JhLXbDpGxhLCBTd2VkZW4!5e0!3m2!1sen!2seg!4v1677866306285!5m2!1sen!2seg"
+            width="300"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+      <section class="footer-about-us">
+        <h3 class="footer-title">About Us</h3>
+        <ul class="footer-list">
+          <li class="footer-list-item">
+            <a href="#" class="link">About Us</a>
+          </li>
+          <li class="footer-list-item">
+            <a href="#" class="link">Delivery Information</a>
+          </li>
+          <li class="footer-list-item">
+            <a href="#" class="link">Privacy Policy</a>
+          </li>
+          <li class="footer-list-item">
+            <a href="#" class="link">Terms & Conditions</a>
+          </li>
+          <li class="footer-list-item">
+            <a href="#" class="link">Contact Us</a>
+          </li>
+        </ul>
+        <p>Secured payment gateways</p>
+        <img src="/images/payment.png" alt="Payment Options" class="payment" />
+      </section>
+      <section class="user-info">
+        <h3 class="footer-title">My Account</h3>
+        <ul class="footer-list">
+          <li class="footer-list-item"><a href="#" class="link">Sign In</a></li>
+          <li class="footer-list-item">
+            <a href="/pages/cart.html" class="link">View Cart</a>
+          </li>
+          <li class="footer-list-item">
+            <a href="#" class="link">My Wishlist</a>
+          </li>
+          <li class="footer-list-item">
+            <a href="#" class="link">Track My Order</a>
+          </li>
+          <li class="footer-list-item"><a href="#" class="link">Help</a></li>
+        </ul>
+      </section>
+    </footer>
   </body>
 </html>

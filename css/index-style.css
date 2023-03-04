@@ -8,13 +8,24 @@
   src: url(../fonts/Roboto/Roboto-Thin.ttf);
 }
 
+@font-face {
+  font-family: Roboto-bold;
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: Roboto-light-italic;
+  src: url(../fonts/Roboto/Roboto-LightItalic.ttf);
+}
+
 * {
   font-family: Roboto-regular;
   margin: 0;
   padding: 0;
 }
 
-body {
+header,
+footer {
   background-color: #1f2937;
 }
 
@@ -64,209 +75,203 @@ body {
 /* start of hero code */
 
 .hero-section {
-  margin-top: 20px;
-  position: relative;
-  width: 100%;
+  background-color: #1f2937;
+  display: flex;
+  padding: 40px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.title-area {
+  flex: 1;
+}
+
+.hero-title {
+  font-size: 48px;
+  color: #f9faf8;
+  font-family: Roboto-bold;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.hero-btn {
+  background-color: #3882f6;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background-color: white;
+  color: #3882f6;
+  transition: 0.3s ease-out;
+}
+
+.image-area {
+  flex: 1;
+  display: flex;
+  justify-content: end;
 }
 
 .hero-image {
-  width: 100%;
-  max-height: 45vh;
-}
-
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: #1f2937;
-  font-size: 65px;
-  text-align: center;
-  transform: translate(-50%, -50%);
+  max-width: 500px;
 }
 
 /* end of hero code */
 
-/* start of gallery code */
+/* start of boxes area code */
+
+.boxes-section {
+  margin-top: 20px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.boxes-title {
+  font-size: 36px;
+  color: #1f2937;
+  font-family: Roboto-bold;
+}
 
 .cards-container {
+  margin-top: 20px;
   width: 100%;
-  margin: 0 auto;
-  margin-top: 80px;
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .card {
-  width: max-content;
-  background-color: #d9d9d9;
-  padding: 1rem;
+  max-width: 150px;
+  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   flex-wrap: wrap;
   border-radius: 10px;
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
+  border: 2px solid #3882f6;
+  border-radius: 5px;
 }
 
 .card:hover {
   transform: translateY(-2px);
 }
 
-.card-title {
-  margin: 1rem auto;
-}
-
 .product-image {
-  max-width: 320px;
-  max-height: 300px;
+  max-width: 150px;
+  max-height: 150px;
 }
 
-.card-row {
+.product-info {
+  font-family: Roboto-light-italic;
+  font-size: 12px;
+  padding: 3px;
+}
+
+/* end of boxes area code */
+
+/* start of quote section */
+
+.quote-section {
+  margin-top: 20px;
+  background-color: #e5e7eb;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.price {
-  color: palevioletred;
-}
-
-.shopping-cart-image {
-  max-width: 30px;
-  max-height: 30px;
-  border-radius: 50%;
-}
-
-.shopping-cart-image:hover {
-  border: 1px solid palevioletred;
-}
-
-.pagination {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 30px;
-  gap: 5px;
-}
-
-.pag-btn {
-  width: 35px;
-  height: 35px;
-  font-size: 15px;
-  border-radius: 10px;
-  border: none;
-  background-color: palevioletred;
-  color: white;
-  transition: all 0.5s ease;
-  cursor: pointer;
-}
-
-.pag-btn:hover {
-  background-color: white;
-  color: palevioletred;
-}
-
-/* end of gallery code */
-
-/*start of newsletter code */
-
-.newsletter {
-  margin-top: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #205688;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.newsletter-background {
-  height: 15vh;
-  display: flex;
-  background-image: url("../images/newsletter-background.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.newsletter-column {
-  display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5em;
+}
+
+.quote {
+  font-size: 36px;
+  font-family: Roboto-light-italic;
+}
+
+.author {
+  font-size: 18px;
+  font-family: Roboto-bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+/* end of quote section */
+
+/* start of call to action section */
+
+.action {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 3em;
+  background-color: #3882f6;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.action-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 2;
+}
+.action-title {
+  font-size: 18px;
+  font-family: Roboto-bold;
+}
+
+.action-text {
+  font-size: 12px;
+  font-family: Roboto-light-italic;
+}
+
+.action-signup {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-.newsletter-column h3 {
-  color: white;
-  font-size: 36px;
-}
-
-.newsletter-column p {
-  margin-top: 10px;
-  color: #474b52;
-  font-size: 16px;
-}
-
-.newsletter-link {
-  text-decoration: none;
-  color: palevioletred;
-}
-
-.newsletter-link:hover {
-  color: #474b52;
-  transition: 0.3s ease-out;
-}
-
-.newsletter-input {
-  display: flex;
-  flex-direction: row;
-}
-
-.input-email {
-  width: 375px;
-  height: 40px;
-  padding: 0 10px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border: none;
-  outline: none;
-}
-
-.input-email:focus::placeholder {
-  color: transparent;
-}
-
-.signup-btn {
+.action-btn {
   width: 100px;
-  height: 40px;
-  border: 0;
-  background-color: palevioletred;
+  height: 30px;
+  background-color: transparent;
   color: white;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border: 2px solid white;
+  border-radius: 5px;
   cursor: pointer;
-  font-size: 20px;
 }
 
-.signup-btn:hover {
+.action-btn:hover {
+  color: #3882f6;
   background-color: white;
-  color: palevioletred;
-  outline: 1px solid black;
   transition: 0.3s ease-out;
 }
 
-/*end of newsletter code */
+/* end of call to action section */
 
 /* start of footer code */
 
 footer {
+  margin-top: 80px;
   display: flex;
   flex-wrap: wrap;
   color: white;
