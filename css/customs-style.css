@@ -74,16 +74,6 @@ body {
   max-height: 45vh;
 }
 
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: #1f2937;
-  font-size: 65px;
-  text-align: center;
-  transform: translate(-50%, -50%);
-}
-
 /* end of hero code */
 
 /* start of gallery code */
