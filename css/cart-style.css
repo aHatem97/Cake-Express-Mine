@@ -107,6 +107,7 @@ main {
   margin-top: 40px;
   color: #1f2937;
   width: 95%;
+  border-bottom: 1px solid #1f2937;
 }
 
 .cart-table {
