@@ -176,6 +176,7 @@ footer {
   transition: transform 0.3s;
   border: 2px solid palevioletred;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .card:hover {
