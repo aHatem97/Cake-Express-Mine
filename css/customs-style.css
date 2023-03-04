@@ -38,6 +38,10 @@ body {
   background-color: #1f2937;
 }
 
+main {
+  background-color: white;
+}
+
 /* start of header code */
 
 .header-nav {
@@ -153,7 +157,7 @@ body {
 }
 
 .shopping-cart-image:hover {
-  border: 1px solid palevioletred;
+  outline: 1px solid palevioletred;
 }
 
 .pagination {
@@ -181,6 +185,7 @@ body {
 .pag-btn:hover {
   background-color: white;
   color: palevioletred;
+  outline: 1px solid #1f2937;
 }
 
 /* end of gallery code */
