@@ -264,6 +264,7 @@ body {
   color: #1f2937;
   width: 400px;
   height: max-content;
+  border-radius: 10px;
 }
 
 .cart-total-table {
