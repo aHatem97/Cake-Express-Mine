@@ -40,13 +40,6 @@ body {
 
 /* start of header code */
 
-.header-sticky {
-  z-index: 999;
-  position: sticky;
-  top: 0;
-  left: 0;
-}
-
 .header-nav {
   display: flex;
   justify-content: space-between;
