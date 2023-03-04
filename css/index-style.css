@@ -9,6 +9,16 @@
 }
 
 @font-face {
+  font-family: Roboto-medium;
+  src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: Roboto-light;
+  src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
   font-family: Roboto-bold;
   src: url(../fonts/Roboto/Roboto-Bold.ttf);
 }
@@ -98,7 +108,7 @@ footer {
 }
 
 .hero-btn {
-  background-color: #3882f6;
+  background-color: palevioletred;
   border: none;
   border-radius: 5px;
   width: 100px;
@@ -110,7 +120,7 @@ footer {
 
 .hero-btn:hover {
   background-color: white;
-  color: #3882f6;
+  color: palevioletred;
   transition: 0.3s ease-out;
 }
 
@@ -164,7 +174,7 @@ footer {
   border-radius: 10px;
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
-  border: 2px solid #3882f6;
+  border: 2px solid palevioletred;
   border-radius: 5px;
 }
 
@@ -219,7 +229,7 @@ footer {
   margin: 0 auto;
   margin-top: 80px;
   padding: 3em;
-  background-color: #3882f6;
+  background-color: palevioletred;
   color: white;
   border-radius: 5px;
   display: flex;
@@ -261,7 +271,7 @@ footer {
 }
 
 .action-btn:hover {
-  color: #3882f6;
+  color: palevioletred;
   background-color: white;
   transition: 0.3s ease-out;
 }

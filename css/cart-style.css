@@ -18,6 +18,16 @@
   src: url(../fonts/Roboto/Roboto-Light.ttf);
 }
 
+@font-face {
+  font-family: Roboto-bold;
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: Roboto-light-italic;
+  src: url(../fonts/Roboto/Roboto-LightItalic.ttf);
+}
+
 * {
   font-family: Roboto-regular;
   margin: 0;
@@ -281,7 +291,7 @@ body {
 }
 
 .cart-total-btn {
-  background-color: #205688;
+  background-color: palevioletred;
   color: white;
   padding: 10px;
   border-radius: 5px;
@@ -293,7 +303,8 @@ body {
 }
 
 .cart-total-btn:hover {
-  background-color: palevioletred;
+  background-color: white;
+  color: palevioletred;
   transition: 0.3s ease-out;
 }
 
